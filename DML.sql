@@ -13,7 +13,7 @@ use avaliacao_22a;
  -- Selecionar com COUNT e HAVING: Conte quantos livros cada autor tem na tabela e mostre apenas os autores com mais de 3 livros.
 SELECT autor, COUNT(*) AS total_de_livros -- COUnt está contando todas as linhas registros de...
 FROM Livros
-GROUP BY autor -- ...auto, agrupamento por autor
+GROUP BY autor -- ...autor, agrupamento por autor
 HAVING COUNT(*) > 3;
 
  -- Selecionar com LIKE: Encontre todos os livros cujo título contém a palavra "Senhor".
